@@ -1,0 +1,7 @@
+{
+  "ok": false,
+  "started_at": "22 Sep, 09:46 AM",
+  "finished_at": "22 Sep, 09:46 AM",
+  "duration_sec": 0.1,
+  "error": "C:\\Users\\006736\\AppData\\Local\\Programs\\Python\\Python39\\python.exe: can't open file 'C:\\Users\\006736\\Pictures\\Final Dashboard\\dashboard_status_pipeline0909_updated.py': [Errno 2] No such file or directory\n"
+}

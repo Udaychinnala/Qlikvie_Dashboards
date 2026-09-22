@@ -1,0 +1,63 @@
+2026-09-22 09:53:09,928 | INFO     | Evaluation time: 2026-09-22 09:53 (Tuesday) IST = 2026-09-22 00:23 EDT -> IST = ET + 9:30 on this date.
+2026-09-22 09:53:09,929 | INFO     | Running in LIVE mode (Selenium scrapers).
+2026-09-22 09:53:22,644 | INFO     | Attempting automated dashboard login...
+2026-09-22 09:53:26,727 | INFO     | Waiting for QlikView app list to confirm login...
+2026-09-22 09:53:29,261 | INFO     | Dashboard login successful.
+2026-09-22 09:53:50,652 | INFO     | Fetched #listArea innerHTML (239402 chars).
+2026-09-22 09:53:50,827 | INFO     | Scraped 90 dashboards from AccessPoint.
+2026-09-22 09:53:54,691 | INFO     | Opening QMC URL with automated basic-auth credentials.
+2026-09-22 09:54:02,556 | INFO     | QMC login/session confirmed.
+2026-09-22 09:54:07,765 | INFO     | Waiting for TreeRow elements...
+2026-09-22 09:54:07,773 | INFO     | Expanding all tree nodes...
+2026-09-22 09:54:11,605 | INFO     | No more collapsed nodes after 5 expand pass(es).
+2026-09-22 09:54:12,132 | INFO     |   Scroll #0 | Rows loaded: 1526
+2026-09-22 09:54:17,371 | INFO     | Final row count before extraction: 1526
+2026-09-22 09:54:17,416 | INFO     | Scraped 1526 QMC job rows.
+2026-09-22 09:54:19,781 | ERROR    | Pipeline failed: [Errno 2] No such file or directory: 'Expected_sheet.xlsx'
+Traceback (most recent call last):
+  File "C:\Users\006736\Pictures\Final Dashboard\dashboard_status_pipeline0909_updated.py", line 2966, in main
+    wb_map = openpyxl.load_workbook(args.excel, data_only=True)
+  File "C:\Users\006736\AppData\Local\Programs\Python\Python39\lib\site-packages\openpyxl\reader\excel.py", line 346, in load_workbook
+    reader = ExcelReader(filename, read_only, keep_vba,
+  File "C:\Users\006736\AppData\Local\Programs\Python\Python39\lib\site-packages\openpyxl\reader\excel.py", line 123, in __init__
+    self.archive = _validate_archive(fn)
+  File "C:\Users\006736\AppData\Local\Programs\Python\Python39\lib\site-packages\openpyxl\reader\excel.py", line 95, in _validate_archive
+    archive = ZipFile(filename, 'r')
+  File "C:\Users\006736\AppData\Local\Programs\Python\Python39\lib\zipfile.py", line 1239, in __init__
+    self.fp = io.open(file, filemode)
+FileNotFoundError: [Errno 2] No such file or directory: 'Expected_sheet.xlsx'
+2026-09-22 09:56:31,289 | INFO     | Evaluation time: 2026-09-22 09:56 (Tuesday) IST = 2026-09-22 00:26 EDT -> IST = ET + 9:30 on this date.
+2026-09-22 09:56:31,289 | INFO     | Running in LIVE mode (Selenium scrapers).
+2026-09-22 09:56:37,645 | INFO     | Attempting automated dashboard login...
+2026-09-22 09:56:41,458 | INFO     | Waiting for QlikView app list to confirm login...
+2026-09-22 09:56:43,917 | INFO     | Dashboard login successful.
+2026-09-22 09:57:00,140 | INFO     | Fetched #listArea innerHTML (239402 chars).
+2026-09-22 09:57:00,392 | INFO     | Scraped 90 dashboards from AccessPoint.
+2026-09-22 09:57:04,162 | INFO     | Opening QMC URL with automated basic-auth credentials.
+2026-09-22 09:57:12,711 | INFO     | QMC login/session confirmed.
+2026-09-22 09:57:17,391 | INFO     | Waiting for TreeRow elements...
+2026-09-22 09:57:17,400 | INFO     | Expanding all tree nodes...
+2026-09-22 09:57:19,546 | INFO     | No more collapsed nodes after 3 expand pass(es).
+2026-09-22 09:57:20,076 | INFO     |   Scroll #0 | Rows loaded: 1526
+2026-09-22 09:57:25,312 | INFO     | Final row count before extraction: 1526
+2026-09-22 09:57:25,350 | INFO     | Scraped 1526 QMC job rows.
+2026-09-22 09:57:28,457 | INFO     | Loaded 81 dashboard groups from mapping sheet.
+2026-09-22 09:57:28,458 | INFO     | Detected manually-maintained periodicity column: 'Perodicity' (will be preserved unchanged).
+2026-09-22 09:57:28,475 | INFO     | Indexed 1526 QMC job records.
+2026-09-22 09:57:28,555 | INFO     | Status summary: {'Dashboard Pending Refresh': 38, 'Updated': 30, 'QMC Running': 12, 'QMC Failed': 1}
+2026-09-22 09:57:28,561 | INFO     | Checked 15 high-priority job(s); 9 currently flagged (delayed/missed/failed).
+2026-09-22 09:57:29,256 | INFO     | Wrote 'Dashboards timing' sheet (90 dashboards).
+2026-09-22 09:57:30,957 | INFO     | Wrote raw QMC sheets: Jobs (1526), Disabled/Waiting/Running/Failed, Summary.
+2026-09-22 09:57:31,236 | INFO     | Wrote 81 dashboard result group(s) / 307 total rows to 'Dashboard_status' (12 columns, periodicity=True).
+2026-09-22 09:57:31,263 | INFO     | Wrote Dashboard_status Summary roll-up: 81 dashboards (BI=16, DnA=62), 1 QMC Failed, 50 not up to date (11 genuinely stale >=2d).
+2026-09-22 09:57:31,267 | INFO     | 'Priority BI Jobs' sheet: matched 15/15 configured job(s) against QMC data.
+2026-09-22 09:57:31,272 | INFO     | 'DB Timings' sheet: Updated (on-time)=1 Early=1 Late=0 Not updated=83 N/A=2 Unmatched=0
+2026-09-22 09:57:31,274 | INFO     | Alert evaluation: 81 dashboards | 68 validated (scheduled today) | 12 ignored (not scheduled today) | 52 pending (run window not closed yet) | 1 periodicity undetermined | 4 ALERTS {'Medium': 2, 'Critical': 1, 'High': 1}
+2026-09-22 09:57:31,274 | WARNING  | Periodicity not understood -> NOT validated: NPI.qvw [Periodicity=None]
+2026-09-22 09:57:31,274 | WARNING  | Schedule conversion problem: Governance Dashboard 2.0.qvw: QMC Timings has no schedulable time (value: None) although Periodicity says this dashboard runs today - cannot derive the IST schedule
+2026-09-22 09:57:31,274 | INFO     |   ALERT [Critical] WarrantyDiscovery.qvw — Qlik Reload Failure
+2026-09-22 09:57:31,274 | INFO     |   ALERT [High] VFTON Designer Tier4.qvw — Not Refreshed On Scheduled Day
+2026-09-22 09:57:31,274 | INFO     |   ALERT [Medium] Governance Dashboard 2.0.qvw — Schedule Conversion Error
+2026-09-22 09:57:31,275 | INFO     |   ALERT [Medium] PLM_ECR Design Coordinator_QVD_GEN_UPDATED.qvw — Refresh Delayed
+2026-09-22 09:57:31,276 | INFO     | 'Dashboard_Alerts_PA': wrote 4 alert row(s) (0 Notified='Y' carried forward).
+2026-09-22 09:57:31,577 | INFO     | Saved results to 'Expected_sheet.xlsx'.
